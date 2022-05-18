@@ -881,6 +881,9 @@ transition-property: fill;
 .form:nth-child(5) {
   margin-bottom: 0px;
 }
+.form:nth-child(4) {
+  margin-bottom: 20px;
+}
 
 .icon-modal {
   position: absolute;
@@ -917,6 +920,7 @@ transition-property: fill;
 .modal-input:hover {
   border-color: var(--accent-color);
 }
+
 .modal-input:focus {
   border-color: var(--accent-color);
   outline: transparent;
@@ -949,6 +953,21 @@ transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+.check-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid;
+  border-color: #212121;
+  border-radius: 2px;
+  margin-left: 15px;
+  margin-right: 7px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 .agreement {
   display: flex;
   align-items: center;
@@ -957,6 +976,7 @@ transition-property: fill;
   line-height: 1.71;
   color: var(--title-text-color);
 }
+
 .agreement::before {
   content: "";
   width: 16px;
@@ -964,6 +984,13 @@ transition-property: fill;
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   margin-right: 8px;
+}
+.form-check:checked + .agreement::before {
+  background-color: var(--accent-color);
+  background-image: url(../images/icon-check.svg);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
 }
 .text-modal {
   margin-left: 5px;
