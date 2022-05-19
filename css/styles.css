@@ -835,11 +835,12 @@ transition-property: fill;
 }
 .form-footer {
   width: 358px;
-    height: 50px;
-    background-color: transparent;
-    border: 1px solid var(--title-text-color);
-    border-radius: 4px;
-    color: var(--complementary-text-color);
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid var(--title-text-color);
+  border-radius: 4px;
+  color: var(--complementary-text-color);
+  padding: 15px 0 15px 16px;
 }
 .button-footer {
   display: inline-flex;
@@ -853,6 +854,12 @@ transition-property: fill;
   border-radius: 4px;
   margin-left: 12px;
   cursor: pointer;
+}
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
 }
 .modal-text {
   color: var(--primary-text-color);
