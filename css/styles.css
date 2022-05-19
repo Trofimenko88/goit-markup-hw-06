@@ -936,25 +936,57 @@ transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-check-text {
-  font-size: 14px;
-  color: #757575;
-  align-items: center;
+.modal-check {
+  padding-left: 12px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
-
-.modal-check-text::before {
-  content: "";
-  width: 16px;
-  height: 15px ;
-  border: 3px solid #000000;
-  border-radius: 2px;
-  margin-right: 5px;
+.inp-check {
+  appearance: none;
+  position: absolute;
 }
-.form-check:checked + .modal-check-text::before {
-background-color: #188CE8;
+.mod-chec::after {
+  content: '' ;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-origin: border-box;
+  background-image: url("../images/check.jpg");
+}
+  
+.inp-check:checked + .mod-chec::after{
+   background-image: url("../images/icon-check.jpg");
+}
+.modal-consent {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 8px;
+}
+.consent-link {
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+.modal-button {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  margin: auto;
+  margin-top: 20px;
+  color: var(--complementary-text-color);
+  background: var(--accent-color);
+  display: block;
 }
 
 /*Основной цвет тексте #212121*/
