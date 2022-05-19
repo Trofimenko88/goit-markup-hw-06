@@ -434,19 +434,6 @@ a.header-link.current.link {
             0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 
 /*Разделы работ*/
 
@@ -878,12 +865,7 @@ transition-property: fill;
   position: relative;
   margin-bottom: 10px;
 }
-.form:nth-child(5) {
-  margin-bottom: 0px;
-}
-.form:nth-child(4) {
-  margin-bottom: 20px;
-}
+
 
 .icon-modal {
   position: absolute;
@@ -893,7 +875,8 @@ transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-  .name-modal {
+  
+.name-modal {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -954,68 +937,24 @@ transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-.check-icon {
-  width: 16px;
-  height: 15px;
-  border: 2px solid;
-  border-color: #212121;
-  border-radius: 2px;
-  margin-left: 15px;
-  margin-right: 7px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.agreement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.modal-check-text {
   font-size: 14px;
-  line-height: 1.71;
-  color: var(--title-text-color);
+  color: #757575;
+  align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.agreement::before {
+.modal-check-text::before {
   content: "";
   width: 16px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
+  height: 15px ;
+  border: 3px solid #000000;
   border-radius: 2px;
-  margin-right: 8px;
+  margin-right: 5px;
 }
-.form-check:checked + .agreement::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/icon-check.svg);
-  background-position: center;
-  background-size: contain;
-  border: transparent;
-}
-.text-modal {
-  margin-left: 5px;
-  color: var(--accent-color);
-  text-decoration: underline;
-}
-.modal-button {
-  width: 200px;
-  height: 50px;
-  border-color: transparent;
-  border-radius: 4px;
-  color: var(--complementary-text-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 55px;
-  padding-right: 55px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  display: block;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.form-check:checked + .modal-check-text::before {
+background-color: #188CE8;
 }
 
 /*Основной цвет тексте #212121*/
