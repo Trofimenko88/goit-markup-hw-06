@@ -698,8 +698,9 @@ transition-property: fill;
 
 /*Footer logo*/
 
-.footer-cont {
-  border-box;
+.footer-info {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-prelogo {
   color: #2196f3;
@@ -769,18 +770,22 @@ transition-property: fill;
   /* or 171% */
   letter-spacing: 0.03em;
 }
-.footer-title {
-  font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--complementary-text-color);
-    margin-bottom: 20px;
+
+.footer-social {
+  margin-left: 70px;
 }
 
+.footer-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
 .footer-social-list {
-  padding-top: 12px;
-  padding-left: 70px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-social-item:not(:last-child) {
@@ -814,10 +819,6 @@ transition-property: fill;
 
 .footer-button-icon:nth-last-child(4) {
   margin-right: 10px;
-}
-.footer-social-list {
-  padding-top: 12px;
-  padding-left: 70px;
 }
 
 .footer-mail-form {
@@ -854,11 +855,16 @@ transition-property: fill;
   margin-left: 12px;
   cursor: pointer;
 }
+/*
 .footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 10px;
+}
+*/
+.footer-icon {
+margin-left: 10px;
 }
 .modal-text {
   color: var(--primary-text-color);
